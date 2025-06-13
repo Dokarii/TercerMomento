@@ -5,7 +5,7 @@ import seaborn as sns
 # Cargar el archivo csv en un dataframe de pandas
 df = pd.read_csv("notasV.csv")
 
-# Mostrar las primeras 10 filas del dataframe
+# Mostrar las primeras 10 filas del dataframe.
 head10 = df.head(10)
 print("Primeras 10 filas:")   
 print(head10)
