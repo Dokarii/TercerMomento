@@ -9,9 +9,11 @@
             font-family: Arial, sans-serif;
             margin: 20px;
             background-color: #f4f4f4;
+            text-align: center;
         }
         h1, h2 {
             color: #333;
+            text-align: center;
         }
         ul {
             list-style-type: none;
@@ -40,51 +42,30 @@
     </style>
 </head>
 <body>
-    <div class="container">
-       <h1 class="mb-4">REPORTE ANALISIS DE VENTAS</h1>
-       <H2>PRIMERAS 10 FILAS</H2>
-       <ul>
-        <li><strong>Ciudades</strong>Cali, Bogotá, Cartagena, Medellín, Barranquilla</li>
-        <li><strong>Productos</strong>Monitor, Celular, Laptop, Impresora, TV, Tablet</li>
-        </ul>
-        <h2>TOTAL DE VENTAS POR CIUDAD</h2>
-        {sales_by_city_table}
-        <h2>PROMEDIO DE VENTAS POR PRODUCTOS</h2>
-        {avg_by_product_table}
-        <h2>DIA CON VENTA MAS ALTA</h2>
-        <table class="table"></table>
-        <tr><th>Cliente</th>
-        <td>{Pedro}</td>
-        </tr>
-        <tr><th>Producto</th>
-        <td>{Impresora}</td>
-        </tr>
-        <tr><th>Ciudad</th>
-        <td>{Medellín}</td>
-        </tr>
-        <tr><th>Valor Venta</th>
-        <td>{4993}</td>
-        </tr>
-        <tr><th>Fecha</th>
-        <td>{2025-05-30}</td>
-        </tr>
+<div class="container">
+    <h1 class="mb-4">PROMEDIOS NOTAS</h1>
+    <H2>PRIMER SEMESTRE</H2>
+
     </table>
-    <h2>CONTEO DE VENTAS POR CIUDAD Y PRODUCTO</h2>
-    {count_table}
+    <h2>En esta sección, el usuario puede visualizar un gráfico de barras que representa el promedio de notas obtenido por cada estudiante durante el primer semestre. Los nombres de los estudiantes aparecen en el eje horizontal (X), mientras que el eje vertical (Y) muestra el promedio de sus calificaciones.
+
+        Este tipo de visualización permite identificar de manera rápida y clara el rendimiento académico individual y comparativo de los estudiantes. Conocer los promedios de notas es esencial para detectar fortalezas y debilidades, tomar decisiones informadas sobre refuerzos académicos, y fomentar una cultura de mejora continua tanto para estudiantes como para docentes.
+
+    </h2>
 
     <h2>GRAFICOS</h2>
     <div class="row">
-        <h5>GRAFICO de barras - promedio notas estudiante</h5>
+        <h5>Grafico de barras - promedio notas estudiante</h5>
         <img src="PromedioNotasPorEstudiante.png">
     </div>
     <div class="row">
-        <h5>GRAFICO circular - Notas por materia</h5>
+        <h5>Grafico circular - Notas por materia</h5>
         <img src="PieChart_NotasPorMateria.png">
     </div>
     <div class="row">
-        <h5>GRAFICO de Lineas - Histograma</h5>
+        <h5>Grafico de Lineas - Histograma</h5>
         <img src="DistribucionNotasFinales.png">
     </div>
-    </div>
+</div>
 </body>
 </html>
